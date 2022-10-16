@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -45,10 +46,36 @@ export default function Home() {
             className={styles.card}
           >
             <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
           </a>
+
+          <Link href="/blog">
+            <a className={styles.card}>
+              <h2>Blog</h2>
+              <p>Toutes les actualités</p>
+            </a>
+          </Link>
+
+          <Link href="/realisations">
+            <a className={styles.card}>
+              <h2>Réalisations</h2>
+              <p>Toutes les réalisations</p>
+            </a>
+          </Link>
+
+          <Link href="/success_stories">
+            <a className={styles.card}>
+              <h2>Success stories</h2>
+              <p>Toutes les success stories</p>
+            </a>
+          </Link>
+
+          <Link href="/page-1">
+            <a className={styles.card}>
+              <h2>Page 1</h2>
+              <p>Contenu de ma page 1</p>
+            </a>
+          </Link>
         </div>
       </main>
 
